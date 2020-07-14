@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		long long n;
+		cin>>n;
+		long long k=(((((n*567)/9)+7492)*235)/47)-498;
+		cout<<abs((k/10)%10)<<endl;
+	}
+}
