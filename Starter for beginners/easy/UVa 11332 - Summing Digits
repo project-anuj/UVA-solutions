@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int Sum(long n)
+{
+	if(n<10)
+	return n;
+	long k=0;
+	while(n>0)
+	{
+		k=k+n%10;
+		n=n/10;
+	}
+	return Sum(k);
+}
+int main()
+{
+	long n;
+	while(cin>>n)
+	{	if(n==0)
+		break;
+		cout<<Sum(n)<<endl;
+	}
+}
