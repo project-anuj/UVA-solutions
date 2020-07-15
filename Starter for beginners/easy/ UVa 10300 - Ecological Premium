@@ -1,0 +1,21 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n;
+	while(n--)
+	{
+		int f;
+		cin>>f;
+		int sum=0;
+		while(f--)
+		{
+			int x,y,z;
+		cin>>x>>y>>z;
+		sum+=(x*z);
+		}
+		cout<<sum<<endl;
+	}
+}
