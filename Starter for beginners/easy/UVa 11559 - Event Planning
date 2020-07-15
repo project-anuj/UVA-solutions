@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,b,h,w,bed,price,cost;
+    int a[1001],length;
+    while(cin>>n>>b>>h>>w)
+    {
+        length=0;
+        for(int i=1; i<=h; i++)
+        {
+            cin>>price;
+            for(int j=1; j<=w; j++)
+            {
+                cin>>bed;
+                if(bed>=n)
+                {
+                    cost=n*price;
+                    if(cost<=b)
+                        a[length++]=cost;
+                }
+ 
+            }
+ 
+        }
+        if(length==0)
+        {
+            cout<<"stay home"<<endl;
+        }
+        else
+        {
+            sort(a,a+length);
+            cout<<a[0]<<endl;
+        }
+ 
+    }
+    return 0;
+}
